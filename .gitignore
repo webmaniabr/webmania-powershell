@@ -1,0 +1,6 @@
+artifacts/
+*.user
+
+# macOS metadata
+.DS_Store
+._*

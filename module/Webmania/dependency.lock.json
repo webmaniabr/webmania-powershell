@@ -1,0 +1,20 @@
+{
+  "id": "Webmania.Sdk",
+  "version": "0.1.0-preview.6",
+  "targetFramework": "net10.0",
+  "assemblySha256": "c7a6f33f12d326ab56a0fd94c692eb93a818c6a8588e1097bfcdf16506e0e2b9",
+  "nuspecSha256": "4ae0982f28e39f82fb6b221fc40e8b1b15738798a30a451c9c584de9bdf10983",
+  "sourceRepositoryDeclaredByPackage": "https://github.com/webmaniabr/webmania-dotnet",
+  "provenance": "The bundled assembly, license and nuspec are taken from the Webmania.Sdk 0.1.0-preview.6 package built from webmania-dotnet and are pinned by SHA-256; the assembly build is deterministic (two independent builds give the same bytes). Rebuild and verify the module when updating the dependency.",
+  "externalNuGetDependencies": [],
+  "license": "Proprietary Webmania; see LICENSE and https://webmania.com.br/termos-de-uso/",
+  "moduleVersion": "0.1.0-alpha7",
+  "powerShellRuntimeBridge": {
+    "source": "runtime/InvocationRuntime.cs",
+    "assemblySha256": "204e9db51e5406ffe243fdd69d741940da28fed1ddc26ebb081326465599c099",
+    "build": "scripts/Build-Runtime.ps1; deterministic csc .NET SDK 10.0.403; net10.0 reference pack 10.0.14; PowerShell 7.6.8 System.Management.Automation; all provided by pinned MCR image",
+    "license": "Proprietary Webmania, same terms as module"
+  },
+  "coupling": "Replacing this DLL requires regeneration, review and complete requalification of the PowerShell candidate. Exact hash is enforced at module import.",
+  "embeddedDnsHelperSha256": "31b286af51dc7eb086f0e76725b209c9f707de94e37d113384f205f582eda23a"
+}

@@ -1,0 +1,1032 @@
+[
+  {
+    "operationId": "nfeGetCertificateValidity",
+    "command": "Get-WebmaniaNfeCertificateValidity",
+    "method": "NfeGetCertificateValidityAsync",
+    "parametersType": "Webmania.NfeGetCertificateValidityParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeGetCertificateValidityResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeGetSefazStatus",
+    "command": "Get-WebmaniaNfeSefazStatus",
+    "method": "NfeGetSefazStatusAsync",
+    "parametersType": "Webmania.NfeGetSefazStatusParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeGetSefazStatusResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeGetDocument",
+    "command": "Get-WebmaniaNfeDocument",
+    "method": "NfeGetDocumentAsync",
+    "parametersType": "Webmania.NfeGetDocumentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeGetDocumentResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeQueryDocument",
+    "command": "Find-WebmaniaNfeDocument",
+    "method": "NfeQueryDocumentAsync",
+    "parametersType": "Webmania.NfeQueryDocumentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeQueryDocumentResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeCreateCorrection",
+    "command": "New-WebmaniaNfeCorrection",
+    "method": "NfeCreateCorrectionAsync",
+    "parametersType": "Webmania.NfeCreateCorrectionParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeCreateCorrectionResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeCreateManifestation",
+    "command": "New-WebmaniaNfeManifestation",
+    "method": "NfeCreateManifestationAsync",
+    "parametersType": "Webmania.NfeCreateManifestationParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeCreateManifestationResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeCancelDocument",
+    "command": "Stop-WebmaniaNfeDocument",
+    "method": "NfeCancelDocumentAsync",
+    "parametersType": "Webmania.NfeCancelDocumentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeCancelDocumentResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeVoidNumbering",
+    "command": "Clear-WebmaniaNfeNumbering",
+    "method": "NfeVoidNumberingAsync",
+    "parametersType": "Webmania.NfeVoidNumberingParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeVoidNumberingResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeCreatePaymentEvent",
+    "command": "New-WebmaniaNfePaymentEvent",
+    "method": "NfeCreatePaymentEventAsync",
+    "parametersType": "Webmania.NfeCreatePaymentEventParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeCreatePaymentEventResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeCancelPaymentEvent",
+    "command": "Stop-WebmaniaNfePaymentEvent",
+    "method": "NfeCancelPaymentEventAsync",
+    "parametersType": "Webmania.NfeCancelPaymentEventParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeCancelPaymentEventResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeCancelIbsCbsEvent",
+    "command": "Stop-WebmaniaNfeIbsCbsEvent",
+    "method": "NfeCancelIbsCbsEventAsync",
+    "parametersType": "Webmania.NfeCancelIbsCbsEventParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeCancelIbsCbsEventResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeListTaxClasses",
+    "command": "Get-WebmaniaNfeTaxClasses",
+    "method": "NfeListTaxClassesAsync",
+    "parametersType": "Webmania.NfeListTaxClassesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeListTaxClassesResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDeleteTaxClasses",
+    "command": "Remove-WebmaniaNfeTaxClasses",
+    "method": "NfeDeleteTaxClassesAsync",
+    "parametersType": "Webmania.NfeDeleteTaxClassesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeDeleteTaxClassesResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeSaveTaxClasses",
+    "command": "Set-WebmaniaNfeTaxClasses",
+    "method": "NfeSaveTaxClassesAsync",
+    "parametersType": "Webmania.NfeSaveTaxClassesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeSaveTaxClassesResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeIssueDocument",
+    "command": "Submit-WebmaniaNfeDocument",
+    "method": "NfeIssueDocumentAsync",
+    "parametersType": "Webmania.NfeIssueDocumentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeIssueDocumentResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeIssueReturn",
+    "command": "Submit-WebmaniaNfeReturn",
+    "method": "NfeIssueReturnAsync",
+    "parametersType": "Webmania.NfeIssueReturnParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeIssueReturnResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeIssueAdjustment",
+    "command": "Submit-WebmaniaNfeAdjustment",
+    "method": "NfeIssueAdjustmentAsync",
+    "parametersType": "Webmania.NfeIssueAdjustmentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeIssueAdjustmentResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeIssueComplement",
+    "command": "Submit-WebmaniaNfeComplement",
+    "method": "NfeIssueComplementAsync",
+    "parametersType": "Webmania.NfeIssueComplementParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeIssueComplementResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fiscalUpdateCompany",
+    "command": "Set-WebmaniaFiscalCompany",
+    "method": "FiscalUpdateCompanyAsync",
+    "parametersType": "Webmania.FiscalUpdateCompanyParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.FiscalUpdateCompanyResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fiscalCreateOrPollReport",
+    "command": "Invoke-WebmaniaFiscalReport",
+    "method": "FiscalCreateOrPollReportAsync",
+    "parametersType": "Webmania.FiscalCreateOrPollReportParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.FiscalCreateOrPollReportResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeCreateIbsCbsEvent",
+    "command": "New-WebmaniaNfeIbsCbsEvent",
+    "method": "NfeCreateIbsCbsEventAsync",
+    "parametersType": "Webmania.NfeCreateIbsCbsEventParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.NfeCreateIbsCbsEventResult]",
+    "scope": "company",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadDanfe",
+    "command": "Receive-WebmaniaNfeDanfe",
+    "method": "NfeDownloadDanfeAsync",
+    "parametersType": "Webmania.NfeDownloadDanfeParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadSimpleDanfe",
+    "command": "Receive-WebmaniaNfeSimpleDanfe",
+    "method": "NfeDownloadSimpleDanfeAsync",
+    "parametersType": "Webmania.NfeDownloadSimpleDanfeParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadLabelDanfe",
+    "command": "Receive-WebmaniaNfeLabelDanfe",
+    "method": "NfeDownloadLabelDanfeAsync",
+    "parametersType": "Webmania.NfeDownloadLabelDanfeParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadCorrectionPdf",
+    "command": "Receive-WebmaniaNfeCorrectionPdf",
+    "method": "NfeDownloadCorrectionPdfAsync",
+    "parametersType": "Webmania.NfeDownloadCorrectionPdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadCorrectionPdfSequence",
+    "command": "Receive-WebmaniaNfeCorrectionPdfSequence",
+    "method": "NfeDownloadCorrectionPdfSequenceAsync",
+    "parametersType": "Webmania.NfeDownloadCorrectionPdfSequenceParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadXml",
+    "command": "Receive-WebmaniaNfeXml",
+    "method": "NfeDownloadXmlAsync",
+    "parametersType": "Webmania.NfeDownloadXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadCancellationXml",
+    "command": "Receive-WebmaniaNfeCancellationXml",
+    "method": "NfeDownloadCancellationXmlAsync",
+    "parametersType": "Webmania.NfeDownloadCancellationXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadCorrectionXml",
+    "command": "Receive-WebmaniaNfeCorrectionXml",
+    "method": "NfeDownloadCorrectionXmlAsync",
+    "parametersType": "Webmania.NfeDownloadCorrectionXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadCorrectionXmlSequence",
+    "command": "Receive-WebmaniaNfeCorrectionXmlSequence",
+    "method": "NfeDownloadCorrectionXmlSequenceAsync",
+    "parametersType": "Webmania.NfeDownloadCorrectionXmlSequenceParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadManifestationXml",
+    "command": "Receive-WebmaniaNfeManifestationXml",
+    "method": "NfeDownloadManifestationXmlAsync",
+    "parametersType": "Webmania.NfeDownloadManifestationXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadPaymentEventXml",
+    "command": "Receive-WebmaniaNfePaymentEventXml",
+    "method": "NfeDownloadPaymentEventXmlAsync",
+    "parametersType": "Webmania.NfeDownloadPaymentEventXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadPaymentEventXmlSequence",
+    "command": "Receive-WebmaniaNfePaymentEventXmlSequence",
+    "method": "NfeDownloadPaymentEventXmlSequenceAsync",
+    "parametersType": "Webmania.NfeDownloadPaymentEventXmlSequenceParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "nfeDownloadIbsCbsEventXml",
+    "command": "Receive-WebmaniaNfeIbsCbsEventXml",
+    "method": "NfeDownloadIbsCbsEventXmlAsync",
+    "parametersType": "Webmania.NfeDownloadIbsCbsEventXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api1-files",
+    "enabled": false,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fiscalDownloadReport",
+    "command": "Receive-WebmaniaFiscalReport",
+    "method": "FiscalDownloadReportAsync",
+    "parametersType": "Webmania.FiscalDownloadReportParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "report-file",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "b2bV1CreateCompanies",
+    "command": "New-WebmaniaB2bV1Companies",
+    "method": "B2bV1CreateCompaniesAsync",
+    "parametersType": "Webmania.B2bV1CreateCompaniesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.B2bV1CreateCompaniesResult]",
+    "scope": "reseller",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "b2bV1ListCompanies",
+    "command": "Get-WebmaniaB2bV1Companies",
+    "method": "B2bV1ListCompaniesAsync",
+    "parametersType": "Webmania.B2bV1ListCompaniesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.B2bV1ListCompaniesResult]",
+    "scope": "reseller",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "b2bV1GetProcessedRequests",
+    "command": "Get-WebmaniaB2bV1ProcessedRequests",
+    "method": "B2bV1GetProcessedRequestsAsync",
+    "parametersType": "Webmania.B2bV1GetProcessedRequestsParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.B2bV1GetProcessedRequestsResult]",
+    "scope": "reseller",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterIssueCte",
+    "command": "Submit-WebmaniaEmitterCte",
+    "method": "EmitterIssueCteAsync",
+    "parametersType": "Webmania.EmitterIssueCteParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceCteFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterIssueSimplifiedCte",
+    "command": "Submit-WebmaniaEmitterSimplifiedCte",
+    "method": "EmitterIssueSimplifiedCteAsync",
+    "parametersType": "Webmania.EmitterIssueSimplifiedCteParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceCteFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCancelCte",
+    "command": "Stop-WebmaniaEmitterCte",
+    "method": "EmitterCancelCteAsync",
+    "parametersType": "Webmania.EmitterCancelCteParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCorrectCte",
+    "command": "Edit-WebmaniaEmitterCteCorrection",
+    "method": "EmitterCorrectCteAsync",
+    "parametersType": "Webmania.EmitterCorrectCteParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterConfirmCteDelivery",
+    "command": "Approve-WebmaniaEmitterCteDelivery",
+    "method": "EmitterConfirmCteDeliveryAsync",
+    "parametersType": "Webmania.EmitterConfirmCteDeliveryParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCancelCteDelivery",
+    "command": "Stop-WebmaniaEmitterCteDelivery",
+    "method": "EmitterCancelCteDeliveryAsync",
+    "parametersType": "Webmania.EmitterCancelCteDeliveryParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterLinkCtePayment",
+    "command": "Join-WebmaniaEmitterCtePayment",
+    "method": "EmitterLinkCtePaymentAsync",
+    "parametersType": "Webmania.EmitterLinkCtePaymentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCancelCtePaymentLink",
+    "command": "Stop-WebmaniaEmitterCtePaymentLink",
+    "method": "EmitterCancelCtePaymentLinkAsync",
+    "parametersType": "Webmania.EmitterCancelCtePaymentLinkParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetCte",
+    "command": "Get-WebmaniaEmitterCte",
+    "method": "EmitterGetCteAsync",
+    "parametersType": "Webmania.EmitterGetCteParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceCteFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetCtePaymentEvents",
+    "command": "Get-WebmaniaEmitterCtePaymentEvents",
+    "method": "EmitterGetCtePaymentEventsAsync",
+    "parametersType": "Webmania.EmitterGetCtePaymentEventsParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2CteIssuanceCtePaymentEvents]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterIssueDce",
+    "command": "Submit-WebmaniaEmitterDce",
+    "method": "EmitterIssueDceAsync",
+    "parametersType": "Webmania.EmitterIssueDceParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2DceIssuanceDceFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCancelDce",
+    "command": "Stop-WebmaniaEmitterDce",
+    "method": "EmitterCancelDceAsync",
+    "parametersType": "Webmania.EmitterCancelDceParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2DceIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetDce",
+    "command": "Get-WebmaniaEmitterDce",
+    "method": "EmitterGetDceAsync",
+    "parametersType": "Webmania.EmitterGetDceParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2DceIssuanceDceFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetNfseXml",
+    "command": "Get-WebmaniaFileNfseXml",
+    "method": "FileGetNfseXmlAsync",
+    "parametersType": "Webmania.FileGetNfseXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetNfsePdf",
+    "command": "Get-WebmaniaFileNfsePdf",
+    "method": "FileGetNfsePdfAsync",
+    "parametersType": "Webmania.FileGetNfsePdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetNfseRpsPdf",
+    "command": "Get-WebmaniaFileNfseRpsPdf",
+    "method": "FileGetNfseRpsPdfAsync",
+    "parametersType": "Webmania.FileGetNfseRpsPdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetCteXml",
+    "command": "Get-WebmaniaFileCteXml",
+    "method": "FileGetCteXmlAsync",
+    "parametersType": "Webmania.FileGetCteXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetCteCancelXml",
+    "command": "Get-WebmaniaFileCteCancelXml",
+    "method": "FileGetCteCancelXmlAsync",
+    "parametersType": "Webmania.FileGetCteCancelXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetCtePdf",
+    "command": "Get-WebmaniaFileCtePdf",
+    "method": "FileGetCtePdfAsync",
+    "parametersType": "Webmania.FileGetCtePdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetCteCorrectionXml",
+    "command": "Get-WebmaniaFileCteCorrectionXml",
+    "method": "FileGetCteCorrectionXmlAsync",
+    "parametersType": "Webmania.FileGetCteCorrectionXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetCteCorrectionPdf",
+    "command": "Get-WebmaniaFileCteCorrectionPdf",
+    "method": "FileGetCteCorrectionPdfAsync",
+    "parametersType": "Webmania.FileGetCteCorrectionPdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetMdfeXml",
+    "command": "Get-WebmaniaFileMdfeXml",
+    "method": "FileGetMdfeXmlAsync",
+    "parametersType": "Webmania.FileGetMdfeXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetMdfePdf",
+    "command": "Get-WebmaniaFileMdfePdf",
+    "method": "FileGetMdfePdfAsync",
+    "parametersType": "Webmania.FileGetMdfePdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetNfcomXml",
+    "command": "Get-WebmaniaFileNfcomXml",
+    "method": "FileGetNfcomXmlAsync",
+    "parametersType": "Webmania.FileGetNfcomXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetNfcomCancelXml",
+    "command": "Get-WebmaniaFileNfcomCancelXml",
+    "method": "FileGetNfcomCancelXmlAsync",
+    "parametersType": "Webmania.FileGetNfcomCancelXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetNfcomPdf",
+    "command": "Get-WebmaniaFileNfcomPdf",
+    "method": "FileGetNfcomPdfAsync",
+    "parametersType": "Webmania.FileGetNfcomPdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetDceXml",
+    "command": "Get-WebmaniaFileDceXml",
+    "method": "FileGetDceXmlAsync",
+    "parametersType": "Webmania.FileGetDceXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetDceCancelXml",
+    "command": "Get-WebmaniaFileDceCancelXml",
+    "method": "FileGetDceCancelXmlAsync",
+    "parametersType": "Webmania.FileGetDceCancelXmlParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fileGetDcePdf",
+    "command": "Get-WebmaniaFileDcePdf",
+    "method": "FileGetDcePdfAsync",
+    "parametersType": "Webmania.FileGetDcePdfParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "api2-files",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetNfseProviderStatus",
+    "command": "Get-WebmaniaEmitterNfseProviderStatus",
+    "method": "EmitterGetNfseProviderStatusAsync",
+    "parametersType": "Webmania.EmitterGetNfseProviderStatusParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.EmitterGetNfseProviderStatusResult]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetNfcomServiceStatus",
+    "command": "Get-WebmaniaEmitterNfcomServiceStatus",
+    "method": "EmitterGetNfcomServiceStatusAsync",
+    "parametersType": "Webmania.EmitterGetNfcomServiceStatusParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.EmitterGetNfcomServiceStatusResult]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetNfse",
+    "command": "Get-WebmaniaEmitterNfse",
+    "method": "EmitterGetNfseAsync",
+    "parametersType": "Webmania.EmitterGetNfseParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.EmitterGetNfseResult]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetNfcom",
+    "command": "Get-WebmaniaEmitterNfcom",
+    "method": "EmitterGetNfcomAsync",
+    "parametersType": "Webmania.EmitterGetNfcomParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.EmitterGetNfcomResult]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetNfcomPaymentEvents",
+    "command": "Get-WebmaniaEmitterNfcomPaymentEvents",
+    "method": "EmitterGetNfcomPaymentEventsAsync",
+    "parametersType": "Webmania.EmitterGetNfcomPaymentEventsParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.EmitterGetNfcomPaymentEventsResult]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterManifestNfse",
+    "command": "Submit-WebmaniaEmitterNfseManifestation",
+    "method": "EmitterManifestNfseAsync",
+    "parametersType": "Webmania.EmitterManifestNfseParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.EmitterManifestNfseResult]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterIssueMdfe",
+    "command": "Submit-WebmaniaEmitterMdfe",
+    "method": "EmitterIssueMdfeAsync",
+    "parametersType": "Webmania.EmitterIssueMdfeParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MdfeIssuanceMdfeFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCloseMdfe",
+    "command": "Close-WebmaniaEmitterMdfe",
+    "method": "EmitterCloseMdfeAsync",
+    "parametersType": "Webmania.EmitterCloseMdfeParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MdfeIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCancelMdfe",
+    "command": "Stop-WebmaniaEmitterMdfe",
+    "method": "EmitterCancelMdfeAsync",
+    "parametersType": "Webmania.EmitterCancelMdfeParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MdfeIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterAddMdfeConductor",
+    "command": "Add-WebmaniaEmitterMdfeConductor",
+    "method": "EmitterAddMdfeConductorAsync",
+    "parametersType": "Webmania.EmitterAddMdfeConductorParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MdfeIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterGetMdfe",
+    "command": "Get-WebmaniaEmitterMdfe",
+    "method": "EmitterGetMdfeAsync",
+    "parametersType": "Webmania.EmitterGetMdfeParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MdfeIssuanceMdfeFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorSearchDocuments",
+    "command": "Search-WebmaniaMonitorDocuments",
+    "method": "MonitorSearchDocumentsAsync",
+    "parametersType": "Webmania.MonitorSearchDocumentsParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.MonitorSearchDocumentsResult]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorGetDocument",
+    "command": "Get-WebmaniaMonitorDocument",
+    "method": "MonitorGetDocumentAsync",
+    "parametersType": "Webmania.MonitorGetDocumentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorDocumentsMonitorDocument]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorListDocumentEvents",
+    "command": "Get-WebmaniaMonitorDocumentEvents",
+    "method": "MonitorListDocumentEventsAsync",
+    "parametersType": "Webmania.MonitorListDocumentEventsParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.MonitorListDocumentEventsResult]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorManifestDocument",
+    "command": "Submit-WebmaniaMonitorDocumentManifestation",
+    "method": "MonitorManifestDocumentAsync",
+    "parametersType": "Webmania.MonitorManifestDocumentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorDocumentsMonitorEvent]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorListReports",
+    "command": "Get-WebmaniaMonitorReports",
+    "method": "MonitorListReportsAsync",
+    "parametersType": "Webmania.MonitorListReportsParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorDocumentsMonitorReportPage]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorDownloadReport",
+    "command": "Receive-WebmaniaMonitorReport",
+    "method": "MonitorDownloadReportAsync",
+    "parametersType": "Webmania.MonitorDownloadReportParameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorImportDocument",
+    "command": "Import-WebmaniaMonitorDocument",
+    "method": "MonitorImportDocumentAsync",
+    "parametersType": "Webmania.MonitorImportDocumentParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.MonitorImportDocumentResult]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorGetImportStatus",
+    "command": "Get-WebmaniaMonitorImportStatus",
+    "method": "MonitorGetImportStatusAsync",
+    "parametersType": "Webmania.MonitorGetImportStatusParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorDocumentsMonitorImportStatus]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorCreateCompany",
+    "command": "New-WebmaniaMonitorCompany",
+    "method": "MonitorCreateCompanyAsync",
+    "parametersType": "Webmania.MonitorCreateCompanyParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorManagementMonitorCompany]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorUpdateCompany",
+    "command": "Set-WebmaniaMonitorCompany",
+    "method": "MonitorUpdateCompanyAsync",
+    "parametersType": "Webmania.MonitorUpdateCompanyParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorManagementMonitorCompany]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorCreateCompanyMunicipality",
+    "command": "New-WebmaniaMonitorCompanyMunicipality",
+    "method": "MonitorCreateCompanyMunicipalityAsync",
+    "parametersType": "Webmania.MonitorCreateCompanyMunicipalityParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorManagementMonitorMunicipalityRegistration]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorUpdateCompanyMunicipality",
+    "command": "Set-WebmaniaMonitorCompanyMunicipality",
+    "method": "MonitorUpdateCompanyMunicipalityAsync",
+    "parametersType": "Webmania.MonitorUpdateCompanyMunicipalityParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorManagementMonitorMunicipalityRegistration]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorDeleteCompanyMunicipality",
+    "command": "Remove-WebmaniaMonitorCompanyMunicipality",
+    "method": "MonitorDeleteCompanyMunicipalityAsync",
+    "parametersType": "Webmania.MonitorDeleteCompanyMunicipalityParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.MonitorDeleteCompanyMunicipalityResult]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorListCompanies",
+    "command": "Get-WebmaniaMonitorCompanies",
+    "method": "MonitorListCompaniesAsync",
+    "parametersType": "Webmania.MonitorListCompaniesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorReadsMonitorCompanyPage]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorGetCompany",
+    "command": "Get-WebmaniaMonitorCompany",
+    "method": "MonitorGetCompanyAsync",
+    "parametersType": "Webmania.MonitorGetCompanyParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorReadsMonitorCompany]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorListCompanyMunicipalities",
+    "command": "Get-WebmaniaMonitorCompanyMunicipalities",
+    "method": "MonitorListCompanyMunicipalitiesAsync",
+    "parametersType": "Webmania.MonitorListCompanyMunicipalitiesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorReadsMonitorMunicipalityPage]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorGetCompanyMunicipality",
+    "command": "Get-WebmaniaMonitorCompanyMunicipality",
+    "method": "MonitorGetCompanyMunicipalityAsync",
+    "parametersType": "Webmania.MonitorGetCompanyMunicipalityParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorReadsMonitorMunicipalityRegistration]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorListAvailableMunicipalities",
+    "command": "Get-WebmaniaMonitorAvailableMunicipalities",
+    "method": "MonitorListAvailableMunicipalitiesAsync",
+    "parametersType": "Webmania.MonitorListAvailableMunicipalitiesParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.MonitorListAvailableMunicipalitiesResult]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "monitorGetDownloadStatistics",
+    "command": "Get-WebmaniaMonitorDownloadStatistics",
+    "method": "MonitorGetDownloadStatisticsAsync",
+    "parametersType": "Webmania.MonitorGetDownloadStatisticsParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2MonitorReadsMonitorDownloadStatistics]",
+    "scope": "monitor",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterIssueNfcom",
+    "command": "Submit-WebmaniaEmitterNfcom",
+    "method": "EmitterIssueNfcomAsync",
+    "parametersType": "Webmania.EmitterIssueNfcomParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2NfcomIssuanceNfcomFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCancelNfcom",
+    "command": "Stop-WebmaniaEmitterNfcom",
+    "method": "EmitterCancelNfcomAsync",
+    "parametersType": "Webmania.EmitterCancelNfcomParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2NfcomIssuanceFiscalEventResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterIssueNfse",
+    "command": "Submit-WebmaniaEmitterNfse",
+    "method": "EmitterIssueNfseAsync",
+    "parametersType": "Webmania.EmitterIssueNfseParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2NfseIssuanceNfseFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterCancelNfse",
+    "command": "Stop-WebmaniaEmitterNfse",
+    "method": "EmitterCancelNfseAsync",
+    "parametersType": "Webmania.EmitterCancelNfseParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2NfseIssuanceNfseFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "emitterReplaceNfse",
+    "command": "Set-WebmaniaEmitterNfseReplacement",
+    "method": "EmitterReplaceNfseAsync",
+    "parametersType": "Webmania.EmitterReplaceNfseParameters",
+    "outputType": "Webmania.ApiResponse[Webmania.Api2NfseIssuanceNfseFiscalResponse]",
+    "scope": "issuer",
+    "enabled": true,
+    "contractStatus": {}
+  },
+  {
+    "operationId": "fiscalDownloadReportV2",
+    "command": "Receive-WebmaniaFiscalReportV2",
+    "method": "FiscalDownloadReportV2Async",
+    "parametersType": "Webmania.FiscalDownloadReportV2Parameters",
+    "outputType": "Webmania.FileResult",
+    "scope": "report-file",
+    "enabled": true,
+    "contractStatus": {}
+  }
+]

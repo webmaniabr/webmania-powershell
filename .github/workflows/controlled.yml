@@ -1,0 +1,22 @@
+name: Controlled PowerShell candidate
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  linux-arm64:
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Acquire exact runtime image
+        run: docker pull mcr.microsoft.com/dotnet/sdk@sha256:afd0ccff9d306812a69ef0f47458376b6acb544ae866cfc4b8d28ff0eef35ea7
+      - name: Generate, archive and test isolated consumer
+        run: bash scripts/Test-Container.sh "$RUNNER_TEMP/powershell-controlled"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: powershell-controlled-linux-arm64
+          path: ${{ runner.temp }}/powershell-controlled

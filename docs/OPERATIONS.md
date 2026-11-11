@@ -1,0 +1,111 @@
+# Operações
+
+Todas as operações do contrato público que o SDK para PowerShell expõe, com o cliente e o método correspondentes. As condições fiscais de cada operação estão na documentação da REST API em https://webmania.com.br/docs/.
+
+Cada comando recebe `-Client` e `-Parameters` (a classe `Webmania.<Operação>Parameters`). Os clientes de arquivo estão em [CREDENTIALS.md](CREDENTIALS.md).
+
+| Operação | Cliente | Método | HTTP | Estado |
+|---|---|---|---|---|
+| `nfeGetCertificateValidity` | `New-WebmaniaCompanyClient` | `Get-WebmaniaNfeCertificateValidity` | `GET /1/nfe/certificado/` | habilitada |
+| `nfeGetSefazStatus` | `New-WebmaniaCompanyClient` | `Get-WebmaniaNfeSefazStatus` | `GET /1/nfe/sefaz/` | habilitada |
+| `nfeGetDocument` | `New-WebmaniaCompanyClient` | `Get-WebmaniaNfeDocument` | `GET /1/nfe/consulta/` | habilitada |
+| `nfeQueryDocument` | `New-WebmaniaCompanyClient` | `Find-WebmaniaNfeDocument` | `POST /1/nfe/consulta/` | habilitada |
+| `nfeCreateCorrection` | `New-WebmaniaCompanyClient` | `New-WebmaniaNfeCorrection` | `POST /1/nfe/cartacorrecao/` | habilitada |
+| `nfeCreateManifestation` | `New-WebmaniaCompanyClient` | `New-WebmaniaNfeManifestation` | `POST /1/nfe/manifesta/` | habilitada |
+| `nfeCancelDocument` | `New-WebmaniaCompanyClient` | `Stop-WebmaniaNfeDocument` | `PUT /1/nfe/cancelar/` | habilitada |
+| `nfeVoidNumbering` | `New-WebmaniaCompanyClient` | `Clear-WebmaniaNfeNumbering` | `PUT /1/nfe/inutilizar/` | habilitada |
+| `nfeCreatePaymentEvent` | `New-WebmaniaCompanyClient` | `New-WebmaniaNfePaymentEvent` | `POST /1/nfe/conciliacao/` | habilitada |
+| `nfeCancelPaymentEvent` | `New-WebmaniaCompanyClient` | `Stop-WebmaniaNfePaymentEvent` | `PUT /1/nfe/conciliacao/cancelar/` | habilitada |
+| `nfeCancelIbsCbsEvent` | `New-WebmaniaCompanyClient` | `Stop-WebmaniaNfeIbsCbsEvent` | `PUT /1/nfe/evento-ibs-cbs/cancelar/` | habilitada |
+| `nfeListTaxClasses` | `New-WebmaniaCompanyClient` | `Get-WebmaniaNfeTaxClasses` | `GET /1/nfe/classe-imposto/` | habilitada |
+| `nfeDeleteTaxClasses` | `New-WebmaniaCompanyClient` | `Remove-WebmaniaNfeTaxClasses` | `DELETE /1/nfe/classe-imposto/` | habilitada |
+| `nfeSaveTaxClasses` | `New-WebmaniaCompanyClient` | `Set-WebmaniaNfeTaxClasses` | `POST /1/nfe/classe-imposto/` | habilitada |
+| `nfeIssueDocument` | `New-WebmaniaCompanyClient` | `Submit-WebmaniaNfeDocument` | `POST /1/nfe/emissao/` | habilitada |
+| `nfeIssueReturn` | `New-WebmaniaCompanyClient` | `Submit-WebmaniaNfeReturn` | `POST /1/nfe/devolucao/` | habilitada |
+| `nfeIssueAdjustment` | `New-WebmaniaCompanyClient` | `Submit-WebmaniaNfeAdjustment` | `POST /1/nfe/ajuste/` | habilitada |
+| `nfeIssueComplement` | `New-WebmaniaCompanyClient` | `Submit-WebmaniaNfeComplement` | `POST /1/nfe/complementar/` | habilitada |
+| `fiscalUpdateCompany` | `New-WebmaniaCompanyClient` | `Set-WebmaniaFiscalCompany` | `POST /1/nfe/empresa/` | habilitada |
+| `fiscalCreateOrPollReport` | `New-WebmaniaCompanyClient` | `Invoke-WebmaniaFiscalReport` | `POST /1/nfe/relatorios/` | habilitada |
+| `nfeCreateIbsCbsEvent` | `New-WebmaniaCompanyClient` | `New-WebmaniaNfeIbsCbsEvent` | `POST /1/nfe/evento-ibs-cbs/` | habilitada |
+| `nfeDownloadDanfe` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeDanfe` | `GET /danfe/{identifier}/` | habilitada |
+| `nfeDownloadSimpleDanfe` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeSimpleDanfe` | `GET /danfe/simples/{identifier}/` | habilitada |
+| `nfeDownloadLabelDanfe` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeLabelDanfe` | `GET /danfe/etiqueta/{identifier}/` | habilitada |
+| `nfeDownloadCorrectionPdf` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeCorrectionPdf` | `GET /dacce/{identifier}/` | habilitada |
+| `nfeDownloadCorrectionPdfSequence` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeCorrectionPdfSequence` | `GET /dacce/{identifier}/{event}/` | habilitada |
+| `nfeDownloadXml` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeXml` | `GET /xmlnfe/{identifier}/` | habilitada |
+| `nfeDownloadCancellationXml` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeCancellationXml` | `GET /xmlnfe/{identifier}/cancelamento` | habilitada |
+| `nfeDownloadCorrectionXml` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeCorrectionXml` | `GET /xmlcce/{identifier}/` | habilitada |
+| `nfeDownloadCorrectionXmlSequence` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeCorrectionXmlSequence` | `GET /xmlcce/{identifier}/{event}/` | habilitada |
+| `nfeDownloadManifestationXml` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeManifestationXml` | `GET /xmlmde/{uuid}/` | habilitada |
+| `nfeDownloadPaymentEventXml` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfePaymentEventXml` | `GET /xmleconf/{identifier}/` | habilitada |
+| `nfeDownloadPaymentEventXmlSequence` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfePaymentEventXmlSequence` | `GET /xmleconf/{identifier}/{event}/` | habilitada |
+| `nfeDownloadIbsCbsEventXml` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaNfeIbsCbsEventXml` | `GET /xmlevento/{uuid}/` | indisponível nesta versão (falha antes de enviar a requisição) |
+| `fiscalDownloadReport` | `New-WebmaniaApi1FilesCompanyClient` | `Receive-WebmaniaFiscalReport` | `GET /relatorio/{uuid}/` | habilitada |
+| `b2bV1CreateCompanies` | `New-WebmaniaResellerClient` | `New-WebmaniaB2bV1Companies` | `POST /api/1/b2b/empresas/` | habilitada |
+| `b2bV1ListCompanies` | `New-WebmaniaResellerClient` | `Get-WebmaniaB2bV1Companies` | `GET /api/1/b2b/empresas/` | habilitada |
+| `b2bV1GetProcessedRequests` | `New-WebmaniaResellerClient` | `Get-WebmaniaB2bV1ProcessedRequests` | `GET /api/1/b2b/requests/` | habilitada |
+| `emitterIssueCte` | `New-WebmaniaIssuerClient` | `Submit-WebmaniaEmitterCte` | `POST /2/cte/emissao` | habilitada |
+| `emitterIssueSimplifiedCte` | `New-WebmaniaIssuerClient` | `Submit-WebmaniaEmitterSimplifiedCte` | `POST /2/cte/emissao/simplificada` | habilitada |
+| `emitterCancelCte` | `New-WebmaniaIssuerClient` | `Stop-WebmaniaEmitterCte` | `PUT /2/cte/cancelar` | habilitada |
+| `emitterCorrectCte` | `New-WebmaniaIssuerClient` | `Edit-WebmaniaEmitterCteCorrection` | `POST /2/cte/correcao` | habilitada |
+| `emitterConfirmCteDelivery` | `New-WebmaniaIssuerClient` | `Approve-WebmaniaEmitterCteDelivery` | `POST /2/cte/entrega` | habilitada |
+| `emitterCancelCteDelivery` | `New-WebmaniaIssuerClient` | `Stop-WebmaniaEmitterCteDelivery` | `PUT /2/cte/entrega/cancelar` | habilitada |
+| `emitterLinkCtePayment` | `New-WebmaniaIssuerClient` | `Join-WebmaniaEmitterCtePayment` | `POST /2/cte/evento` | habilitada |
+| `emitterCancelCtePaymentLink` | `New-WebmaniaIssuerClient` | `Stop-WebmaniaEmitterCtePaymentLink` | `PUT /2/cte/evento/cancelar` | habilitada |
+| `emitterGetCte` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterCte` | `GET /2/cte/consulta/{identifier}` | habilitada |
+| `emitterGetCtePaymentEvents` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterCtePaymentEvents` | `GET /2/cte/consulta/evento/{identifier}` | habilitada |
+| `emitterIssueDce` | `New-WebmaniaIssuerClient` | `Submit-WebmaniaEmitterDce` | `POST /2/dce/emissao` | habilitada |
+| `emitterCancelDce` | `New-WebmaniaIssuerClient` | `Stop-WebmaniaEmitterDce` | `PUT /2/dce/cancelar` | habilitada |
+| `emitterGetDce` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterDce` | `GET /2/dce/consulta/{identifier}` | habilitada |
+| `fileGetNfseXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileNfseXml` | `GET /xmlnfse/{identifier}` | habilitada |
+| `fileGetNfsePdf` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileNfsePdf` | `GET /nfse/{identifier}` | habilitada |
+| `fileGetNfseRpsPdf` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileNfseRpsPdf` | `GET /darps/{identifier}` | habilitada |
+| `fileGetCteXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileCteXml` | `GET /xmlcte/{identifier}` | habilitada |
+| `fileGetCteCancelXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileCteCancelXml` | `GET /xmlcte/{identifier}/cancelamento` | habilitada |
+| `fileGetCtePdf` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileCtePdf` | `GET /dacte/{identifier}` | habilitada |
+| `fileGetCteCorrectionXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileCteCorrectionXml` | `GET /xmlcce/{identifier}` | habilitada |
+| `fileGetCteCorrectionPdf` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileCteCorrectionPdf` | `GET /dacce/{identifier}` | habilitada |
+| `fileGetMdfeXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileMdfeXml` | `GET /xmlmdfe/{identifier}` | habilitada |
+| `fileGetMdfePdf` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileMdfePdf` | `GET /damdfe/{identifier}` | habilitada |
+| `fileGetNfcomXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileNfcomXml` | `GET /xmlnfcom/{identifier}` | habilitada |
+| `fileGetNfcomCancelXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileNfcomCancelXml` | `GET /xmlnfcom/{identifier}/cancelamento` | habilitada |
+| `fileGetNfcomPdf` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileNfcomPdf` | `GET /danfecom/{identifier}` | habilitada |
+| `fileGetDceXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileDceXml` | `GET /xmldce/{identifier}` | habilitada |
+| `fileGetDceCancelXml` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileDceCancelXml` | `GET /xmldce/{identifier}/cancelamento` | habilitada |
+| `fileGetDcePdf` | `New-WebmaniaApi2FilesCompanyBearerClient` | `Get-WebmaniaFileDcePdf` | `GET /dace/{identifier}` | habilitada |
+| `emitterGetNfseProviderStatus` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterNfseProviderStatus` | `GET /2/nfse/status` | habilitada |
+| `emitterGetNfcomServiceStatus` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterNfcomServiceStatus` | `GET /2/nfcom/status` | habilitada |
+| `emitterGetNfse` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterNfse` | `GET /2/nfse/consulta/{identifier}` | habilitada |
+| `emitterGetNfcom` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterNfcom` | `GET /2/nfcom/consulta/{identifier}` | habilitada |
+| `emitterGetNfcomPaymentEvents` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterNfcomPaymentEvents` | `GET /2/nfcom/consulta/evento/{identifier}` | habilitada |
+| `emitterManifestNfse` | `New-WebmaniaIssuerClient` | `Submit-WebmaniaEmitterNfseManifestation` | `PUT /2/nfse/manifestar` | habilitada |
+| `emitterIssueMdfe` | `New-WebmaniaIssuerClient` | `Submit-WebmaniaEmitterMdfe` | `POST /2/mdfe/emissao` | habilitada |
+| `emitterCloseMdfe` | `New-WebmaniaIssuerClient` | `Close-WebmaniaEmitterMdfe` | `PUT /2/mdfe/encerrar` | habilitada |
+| `emitterCancelMdfe` | `New-WebmaniaIssuerClient` | `Stop-WebmaniaEmitterMdfe` | `PUT /2/mdfe/cancelar` | habilitada |
+| `emitterAddMdfeConductor` | `New-WebmaniaIssuerClient` | `Add-WebmaniaEmitterMdfeConductor` | `PUT /2/mdfe/condutor` | habilitada |
+| `emitterGetMdfe` | `New-WebmaniaIssuerClient` | `Get-WebmaniaEmitterMdfe` | `GET /2/mdfe/consulta/{key}` | habilitada |
+| `monitorSearchDocuments` | `New-WebmaniaMonitorClient` | `Search-WebmaniaMonitorDocuments` | `POST /2/monitor/documentos` | habilitada |
+| `monitorGetDocument` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorDocument` | `GET /2/monitor/documentos/{fd}` | habilitada |
+| `monitorListDocumentEvents` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorDocumentEvents` | `GET /2/monitor/documentos/{fd}/eventos` | habilitada |
+| `monitorManifestDocument` | `New-WebmaniaMonitorClient` | `Submit-WebmaniaMonitorDocumentManifestation` | `POST /2/monitor/documentos/{fd}/eventos` | habilitada |
+| `monitorListReports` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorReports` | `GET /2/monitor/documentos/relatorios` | habilitada |
+| `monitorDownloadReport` | `New-WebmaniaMonitorClient` | `Receive-WebmaniaMonitorReport` | `GET /2/monitor/documentos/relatorios/{report}` | habilitada |
+| `monitorImportDocument` | `New-WebmaniaMonitorClient` | `Import-WebmaniaMonitorDocument` | `POST /2/monitor/documentos/importacoes` | habilitada |
+| `monitorGetImportStatus` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorImportStatus` | `GET /2/monitor/documentos/importacoes/{uuid}` | habilitada |
+| `monitorCreateCompany` | `New-WebmaniaMonitorClient` | `New-WebmaniaMonitorCompany` | `POST /2/monitor/empresas` | habilitada |
+| `monitorUpdateCompany` | `New-WebmaniaMonitorClient` | `Set-WebmaniaMonitorCompany` | `PUT /2/monitor/empresas/{company}` | habilitada |
+| `monitorCreateCompanyMunicipality` | `New-WebmaniaMonitorClient` | `New-WebmaniaMonitorCompanyMunicipality` | `POST /2/monitor/empresas/{company}/municipios-nfse` | habilitada |
+| `monitorUpdateCompanyMunicipality` | `New-WebmaniaMonitorClient` | `Set-WebmaniaMonitorCompanyMunicipality` | `PUT /2/monitor/empresas/{company}/municipios-nfse/{download}` | habilitada |
+| `monitorDeleteCompanyMunicipality` | `New-WebmaniaMonitorClient` | `Remove-WebmaniaMonitorCompanyMunicipality` | `DELETE /2/monitor/empresas/{company}/municipios-nfse/{download}` | habilitada |
+| `monitorListCompanies` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorCompanies` | `GET /2/monitor/empresas` | habilitada |
+| `monitorGetCompany` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorCompany` | `GET /2/monitor/empresas/{company}` | habilitada |
+| `monitorListCompanyMunicipalities` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorCompanyMunicipalities` | `GET /2/monitor/empresas/{company}/municipios-nfse` | habilitada |
+| `monitorGetCompanyMunicipality` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorCompanyMunicipality` | `GET /2/monitor/empresas/{company}/municipios-nfse/{download}` | habilitada |
+| `monitorListAvailableMunicipalities` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorAvailableMunicipalities` | `GET /2/monitor/municipios-nfse` | habilitada |
+| `monitorGetDownloadStatistics` | `New-WebmaniaMonitorClient` | `Get-WebmaniaMonitorDownloadStatistics` | `GET /2/monitor/estatisticas/downloads` | habilitada |
+| `emitterIssueNfcom` | `New-WebmaniaIssuerClient` | `Submit-WebmaniaEmitterNfcom` | `POST /2/nfcom/emissao` | habilitada |
+| `emitterCancelNfcom` | `New-WebmaniaIssuerClient` | `Stop-WebmaniaEmitterNfcom` | `PUT /2/nfcom/cancelar` | habilitada |
+| `emitterIssueNfse` | `New-WebmaniaIssuerClient` | `Submit-WebmaniaEmitterNfse` | `POST /2/nfse/emissao` | habilitada |
+| `emitterCancelNfse` | `New-WebmaniaIssuerClient` | `Stop-WebmaniaEmitterNfse` | `PUT /2/nfse/cancelar` | habilitada |
+| `emitterReplaceNfse` | `New-WebmaniaIssuerClient` | `Set-WebmaniaEmitterNfseReplacement` | `POST /2/nfse/substituir` | habilitada |
+| `fiscalDownloadReportV2` | cliente de arquivos | `Receive-WebmaniaFiscalReportV2` | `GET /relatorios/{uuid}` | habilitada |
